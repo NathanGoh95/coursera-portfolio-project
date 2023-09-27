@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.logo_header {
+  display: flex;
+  margin: 0 auto;
+  width: 250px;
+  height: 150px;
+}
