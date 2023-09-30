@@ -4,11 +4,11 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.logo_header {
+#logo_header {
   display: flex;
   margin: 0 auto;
-  width: 250px;
-  height: 150px;
+  width: 750px;
+  height: 100px;
 }
 
 .parent_container {
@@ -17,7 +17,7 @@ body {
   gap: 20px;
 }
 
-#tutorial {
+#promotion {
   grid-column: 1 / span 3;
 }
 
@@ -25,11 +25,11 @@ body {
   grid-column: 1 / span 1;
 }
 
-#bookings {
+#tutorials {
   grid-column: 2 / span 1;
 }
 
-#about {
+#bookings {
   grid-column: 3 / span 1;
 }
 
@@ -38,13 +38,12 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.logo_footer {
-  grid-column: 1 / span 1;
+#logo_footer {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 100%;
-  height: 40px;
+  width: 100px;
+  height: 75px;
 }
 
 .copyright_footer {
