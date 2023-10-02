@@ -5,51 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Day</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@500&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header class="header_container">
       <img src="Logo/Artboard 22.png" alt="Copmany Logo" id="logo_header" />
     </header>
     <!-- Navigation bar -->
-    <nav class="navbar">
+    <nav class="navbar_container">
       <ul class="navbar_menu">
-        <li><a href="#"></a>Home</li>
-        <li><a href="#"></a>Services</li>
-        <li><a href="#"></a>Bookings</li>
-        <li><a href="#"></a>About</li>
+        <li><a href="index.html" class="navbar_link">Home</a></li>
+        <li><a href="#services_container" class="navbar_link">Services</a></li>
+        <li><a href="#tutorials_container" class="navbar_link">Tutorial</a></li>
+        <li><a href="#bookings_container" class="navbar_link">Reservation</a></li>
       </ul>
     </nav>
     <!-- Info container -->
     <main class="parent_container">
       <!-- Tutorial section -->
-      <section id="promotion">
-        <h1>Hair & Nail 30% Off</h1>
-        <p>Enjoy a 30% off when you book for any of our Hair & Nail services!</p>
-        <img src="Images/promotion image.jpg" alt="promotion image" id="promotion_img" />
+      <section id="promotion_container">
+        <div>
+          <h1>Hair & Nail 30% Off</h1>
+          <p>Enjoy a 30% off when you book for any of our Hair & Nail services!</p>
+        </div>
       </section>
       <!-- Services section -->
-      <section id="services">
+      <section id="services_container">
         <h1>Our Services</h1>
+        <div><img src="Images/haircut.jpg" alt="haircut image" id="service_img" /></div>
         <p>
-          <img src="Images/haircut.jpg" alt="haircut image" id="service_img" />
-          Cut<br />
-          Color<br />
-          Styling<br />
-          Nail
+          Hair Cut<br />
+          Hair Color<br />
+          Hair Styling<br />
+          Nail Services
         </p>
       </section>
       <!-- Tutorials section -->
-      <section id="tutorials">
-        <img src="Images/nail.jpg" alt="nail image" id="tutorial_img" />
-        <h1>Do It Yourself too!</h1>
-        <p>Learn how to do your own simple makeups and nails at home here!</p>
-        <a href="https://www.youtube.com/watch?v=L2o7A_GXDTE&t=20s">Simple Nails DIY at home</a><br />
-        <a href="https://www.youtube.com/watch?v=kzh1Sk3MCnI&t=128s">Easy Hairstyles for long hair</a>
+      <section id="tutorials_container">
+        <h1>You Can Do It Yourself too!</h1>
+        <iframe
+          src="https://www.youtube.com/embed/kzh1Sk3MCnI?si=-SSgqT4rG4u_O6cr"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <p>Learn how to do simple hairsyles by your own at home here!</p>
       </section>
       <!-- Bookings section -->
-      <section id="bookings">
-        <img src="Images/booking.webp" alt="booking image" id="booking_img" />
-        <h1>Book Your Service</h1>
+      <section id="bookings_container">
+        <h1>Reserve Your Service</h1>
+        <div>
+          <img src="Images/booking.webp" alt="booking image" id="booking_img" />
+        </div>
         <p>
           Opening hours: <br />
           Mon - Sat: 10am - 7pm <br />
