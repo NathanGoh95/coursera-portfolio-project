@@ -1,14 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 body {
   display: grid;
-  height: 100vh;
+  padding: 20px 300px;
   grid-template-rows: auto 1fr auto;
+  background-color: #c4cbca;
+  max-width: fit-content;
 }
 
 #logo_header {
   display: flex;
   margin: 0 auto;
-  width: 750px;
-  height: 100px;
+  width: 650px;
+  height: 90px;
+}
+.navbar_container {
+  margin: 20px 0px;
+}
+
+.navbar_menu {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  max-width: auto;
+}
+
+.navbar_link {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_link:hover {
+  color: #b89e97;
+  transition: all 0.2s ease;
 }
 
 .parent_container {
@@ -17,35 +53,96 @@ body {
   gap: 20px;
 }
 
-#promotion {
+#promotion_container {
   grid-column: 1 / span 3;
+  background-image: url("Images/promotion image.jpg");
+  background-position: center bottom 30%;
+  padding: 55px 0;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
 }
 
-#services {
+#promotion_container div {
+  display: inline-block;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+#promotion_container h1 {
+  text-transform: uppercase;
+}
+
+#services_container {
   grid-column: 1 / span 1;
+  background-color: #b89e97;
+  padding: 20px 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#tutorials {
+#services_container #service_img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+#tutorials_container {
   grid-column: 2 / span 1;
+  background-color: #b89e97;
+  padding: 20px 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#bookings {
+#tutorials_container iframe {
+  width: 400px;
+  height: 200px;
+  margin: 15px 0;
+}
+
+#bookings_container {
   grid-column: 3 / span 1;
+  background-color: #b89e97;
+  padding: 20px 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bookings_container #booking_img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px 0;
 }
 
 .footer_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
 }
 
 #logo_footer {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 100px;
-  height: 75px;
+  width: 80px;
+  height: 60px;
 }
 
 .copyright_footer {
   grid-column: 2 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
